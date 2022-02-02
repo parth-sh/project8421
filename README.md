@@ -29,4 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Steps:
 1. ng.cmd new project8421 --skip-tests
 2. ng.cmd add @angular/material
-3. 
+3. ng.cmd generate module material
+4.
