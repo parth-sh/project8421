@@ -4,7 +4,9 @@
         <mat-toolbar>
             <div>Logo</div>
             <span class="example-spacer"></span>
-            <mat-icon class="close" (click)="drawer.close()">close</mat-icon>
+            <button mat-icon-button>
+                <mat-icon class="close" (click)="drawer.close()">close</mat-icon>
+            </button>
         </mat-toolbar>
 
         <div class="drawer-contents">
