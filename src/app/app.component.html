@@ -1,1 +1,37 @@
-<button mat-button>Hello world</button>
+<mat-drawer-container>
+    <mat-drawer #drawer mode="side" opened="true">
+
+        <mat-toolbar>
+            <div>Logo</div>
+            <span class="example-spacer"></span>
+            <mat-icon class="close" (click)="drawer.close()">close</mat-icon>
+        </mat-toolbar>
+
+        <div class="drawer-contents">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequuntur eius rem, quas eos
+            perferendis quae nihil praesentium omnis fuga modi. Molestias praesentium quas blanditiis sunt adipisci
+            maiores doloremque culpa?
+        </div>
+    </mat-drawer>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button *ngIf="!drawer.opened" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>My Application</span>
+
+        <span class="example-spacer"></span>
+
+        <button mat-raised-button color="primary">Login</button>
+        <button mat-button>
+            <mat-icon>shopping_cart</mat-icon>&ensp;Cart
+        </button>
+    </mat-toolbar>
+
+    <div class="main contents">
+        drawer opened: {{drawer.opened}}
+        <div>Contents xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxxx xxxxxx xxxxxx</div>
+        <div style="height: 1000px">&nbsp;</div>
+    </div>
+
+</mat-drawer-container>

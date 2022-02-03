@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+button {
+    margin: 0.5rem;
+}
+
+.mat-drawer {
+    width: 25%;
+    border-right: 1px solid #ccc;
+}
+
+.mat-drawer .drawer-contents {
+    padding: 16px;
+}
