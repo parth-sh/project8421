@@ -4,11 +4,11 @@
 button {
     margin: 0.5rem;
 }
-.mat-drawer {
-    width: 25%;
-    border-right: 1px solid #ccc;
-}
-
 .mat-drawer-container {
     height: 100%;
+}
+.mat-drawer {
+    width: 25%;
+    background-color: whitesmoke;
+    border-right: 0px;
 }

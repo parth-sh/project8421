@@ -9,24 +9,22 @@
             </button>
         </mat-toolbar>
 
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequuntur eius rem, quas eos
-            perferendis quae nihil praesentium omnis fuga modi. Molestias praesentium quas blanditiis sunt adipisci
-            maiores doloremque culpa?
-        </div>
+        <mat-nav-list *ngFor="let item of nav_list_items">
+            <mat-list-item (click)="drawer.close()" routerLink="{{item.route_link}}">{{item.route_name}}</mat-list-item>
+        </mat-nav-list>
     </mat-drawer>
 
-    <mat-toolbar color="primary">
+    <mat-toolbar>
         <button mat-icon-button *ngIf="!drawer.opened" (click)="drawer.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <span>My Application</span>
+        <h1><a routerLink="/" style="text-decoration: none;">{{title}}</a></h1>
 
         <span class="example-spacer"></span>
 
         <button mat-raised-button color="primary">Login</button>
-        <button mat-button>
-            <mat-icon>shopping_cart</mat-icon>&ensp;Cart
+        <button mat-button matBadge="{{starred_count}}">
+            <mat-icon>star_border</mat-icon>&ensp;Starrred
         </button>
     </mat-toolbar>
 
