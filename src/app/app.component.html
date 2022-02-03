@@ -1,11 +1,11 @@
 <mat-drawer-container>
-    <mat-drawer #drawer mode="side" opened="true">
 
+    <mat-drawer #drawer mode="side">
         <mat-toolbar>
             <div>Logo</div>
             <span class="example-spacer"></span>
             <button mat-icon-button>
-                <mat-icon class="close" (click)="drawer.close()">close</mat-icon>
+                <mat-icon (click)="drawer.close()">close</mat-icon>
             </button>
         </mat-toolbar>
 
@@ -30,7 +30,7 @@
         </button>
     </mat-toolbar>
 
-    <div class="main contents">
+    <div>
         drawer opened: {{drawer.opened}}
         <div>Contents xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxxx xxxxxx xxxxxx</div>
         <div style="height: 1000px">&nbsp;</div>
