@@ -27,8 +27,6 @@ npm install jquery
 
 angular.json
 "styles": [
-    "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-    "src/styles.css",
     "./node_modules/bootstrap/dist/css/bootstrap.min.css"
 ],
 "scripts": [
