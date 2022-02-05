@@ -34,3 +34,15 @@ angular.json
     "./node_modules/bootstrap/dist/js/bootstrap.min.js"
 ]
 ```
+
+
+# CSS references
+
+full page image
+https://www.w3schools.com/howto/howto_css_full_page.asp
+
+cool buttons
+https://fdossena.com/?p=html5cool/buttons/i.frag
+
+smooth scroll
+https://stackoverflow.com/a/64150396

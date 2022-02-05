@@ -1,0 +1,44 @@
+.bg {
+  /* The image used */
+  background-image: url('/assets/apartments.png');
+  background-color: #222;
+
+  /* Full height */
+  height: 80%;
+  width: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a.button2{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  font-size: x-large;
+  color:#FFFFFF;
+  background-color: rgba(255,255,255,0.5);
+  text-align:center;
+  transition: all 0.15s;
+}
+a.button2:hover{
+  color:#DDDDDD;
+  border-color:#DDDDDD;
+}
+a.button2:active{
+  color:#BBBBBB;
+  border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+  a.button2{
+    display:block;
+    margin:0.4em auto;
+  }
+}
