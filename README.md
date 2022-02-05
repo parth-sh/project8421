@@ -49,3 +49,6 @@ https://fdossena.com/?p=html5cool/buttons/i.frag
 
 smooth scroll
 https://stackoverflow.com/a/64150396
+
+custom carousel
+https://stackoverflow.com/questions/54033432/horizontal-scroll-with-arrows-for-angular-package

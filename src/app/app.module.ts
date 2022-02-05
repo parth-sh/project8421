@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DialogElementsExampleDialog, ProfileComponent } from './profile/profile.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ProfileComponent,
-    DialogElementsExampleDialog
+    DialogElementsExampleDialog,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
