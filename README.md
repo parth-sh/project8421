@@ -38,6 +38,9 @@ angular.json
 
 # CSS references
 
+remove scrollbars
+https://stackoverflow.com/a/30680994
+
 full page image
 https://www.w3schools.com/howto/howto_css_full_page.asp
 
