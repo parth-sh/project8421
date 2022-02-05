@@ -21,6 +21,9 @@
 
 /* Add some padding inside the card container */
 .deatail_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 2px 16px;
     height: 10rem;
     width: 100%;
