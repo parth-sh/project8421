@@ -2,13 +2,13 @@
     <a href="#main" class="button2">Get Started</a>
 </button>
 
-<section id="main" style="padding: {{main_section_padding}};">
+<section id="main" [ngClass]="mobile_view ? 'mobile_padding' : 'desktop_padding'" (window:resize)="onResize($event)">
     <div ngClass="mat-display-1" style="margin-bottom: 20px;">Emerging projects in India</div>
     <h3 style="font-weight: normal;">Localities with recent devlopment</h3>
 
     <div ngClass="horizontal_scroll_data">
-        <div *ngFor="let link of featured_links">
-            <app-item [img_src]="link"></app-item>
+        <div *ngFor="let item of featured_items">
+            <app-item [item]="item"></app-item>
         </div>
     </div>
 
@@ -16,14 +16,14 @@
     <h3 style="font-weight: normal;">Curated especially for you</h3>
 
     <div ngClass="horizontal_scroll_data">
-        <div *ngFor="let link of recommended_links">
-            <app-item [img_src]="link"></app-item>
+        <div *ngFor="let item of recommended_items">
+            <app-item [item]="item"></app-item>
         </div>
     </div>
 
     <div ngClass="mat-display-1" style="margin-bottom: 20px;">Search by city</div>
 
-    <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+    <mat-grid-list [cols]="mobile_view ? 1 : 5" rowHeight="2:0.5">
         <mat-grid-tile>Lucknow</mat-grid-tile>
         <mat-grid-tile>Mumbai</mat-grid-tile>
         <mat-grid-tile>Bangalore</mat-grid-tile>
