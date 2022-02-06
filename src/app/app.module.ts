@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { DialogElementsExampleDialog, ProfileComponent } from './profile/profile.component';
-import { ItemComponent } from './item/item.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DialogElementsExampleDialog, ProfileComponent } from './components/profile/profile.component';
+import { ItemComponent } from './components/item/item.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemComponent } from './item/item.component';
     DashboardComponent,
     ProfileComponent,
     DialogElementsExampleDialog,
-    ItemComponent
+    ItemComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,

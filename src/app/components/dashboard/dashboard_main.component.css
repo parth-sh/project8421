@@ -1,3 +1,11 @@
+.mobile_padding {
+    padding: 1rem;
+}
+
+.desktop_padding {
+    padding: 3rem;
+}
+
 .horizontal_scroll_data {
     display: flex;
     overflow: scroll;

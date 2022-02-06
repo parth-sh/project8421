@@ -35,6 +35,9 @@ angular.json
 ]
 ```
 
+## responsive sizing of components
+https://stackoverflow.com/a/48499719/9229695
+
 
 # CSS references
 
