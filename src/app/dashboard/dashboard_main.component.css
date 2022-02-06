@@ -1,3 +1,8 @@
-.main_section {
-    padding: 3rem;
+.horizontal_scroll_data {
+    display: flex;
+    overflow: scroll;
+}
+
+mat-grid-tile {
+    background: #dbd1b4;
 }

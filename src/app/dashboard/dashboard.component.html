@@ -1,10 +1,56 @@
-<button mat-button [ngClass]="['bg']">
+<button mat-button ngClass="bg">
     <a href="#main" class="button2">Get Started</a>
 </button>
 
-<section id="main" [ngClass]="['main_section']">
-    <div class="mat-display-2">Emerging projects in India</div>
+<section id="main" style="padding: {{main_section_padding}};">
+    <div ngClass="mat-display-1" style="margin-bottom: 20px;">Emerging projects in India</div>
+    <h3 style="font-weight: normal;">Localities with recent devlopment</h3>
+
+    <div ngClass="horizontal_scroll_data">
+        <div *ngFor="let link of featured_links">
+            <app-item [img_src]="link"></app-item>
+        </div>
+    </div>
+
+    <div ngClass="mat-display-1" style="margin-bottom: 20px;">Recommended Properties</div>
+    <h3 style="font-weight: normal;">Curated especially for you</h3>
+
+    <div ngClass="horizontal_scroll_data">
+        <div *ngFor="let link of recommended_links">
+            <app-item [img_src]="link"></app-item>
+        </div>
+    </div>
+
+    <div ngClass="mat-display-1" style="margin-bottom: 20px;">Search by city</div>
+
+    <mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
+        <mat-grid-tile>Lucknow</mat-grid-tile>
+        <mat-grid-tile>Mumbai</mat-grid-tile>
+        <mat-grid-tile>Bangalore</mat-grid-tile>
+        <mat-grid-tile>Delhi</mat-grid-tile>
+        <mat-grid-tile>Chennai</mat-grid-tile>
+        <mat-grid-tile>Agra</mat-grid-tile>
+        <mat-grid-tile>Gandhinagar</mat-grid-tile>
+        <mat-grid-tile>Kashmir</mat-grid-tile>
+        <mat-grid-tile>Pune</mat-grid-tile>
+    </mat-grid-list>
+
     <div style="height: 1000px">
         &nbsp;
     </div>
+
+
 </section>
+
+<!-- TODO: use grid in search page with app-item component -->
+<!-- <mat-grid-list cols="4">
+    <mat-grid-tile colspan="1" rowspan="1">1</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">2</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">3</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">4</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">5</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">6</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">7</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">8</mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="1">9</mat-grid-tile>
+</mat-grid-list> -->

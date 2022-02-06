@@ -11,6 +11,8 @@ export class AppComponent {
 
   starred_count: number = 0
 
+  value = ""
+
   nav_list_items: { route_link: string, route_name: string }[] = [
     { route_link: "/profile", route_name: "Profile" },
   ];
