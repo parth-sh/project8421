@@ -50,5 +50,11 @@ https://fdossena.com/?p=html5cool/buttons/i.frag
 smooth scroll
 https://stackoverflow.com/a/64150396
 
-custom carousel
+custom card
+https://www.w3schools.com/howto/howto_css_cards.asp
+
+horizontal scrollable div
 https://stackoverflow.com/questions/54033432/horizontal-scroll-with-arrows-for-angular-package
+
+virtual scrolling(future use)
+https://material.angular.io/cdk/scrolling/examples#cdk-virtual-scroll-horizontal

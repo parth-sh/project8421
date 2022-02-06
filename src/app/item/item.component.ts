@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  image_src = "../../assets/apartments.png"
-  // image_src = ""
+  @Input() img_src?: string;
 
   constructor() { }
 
